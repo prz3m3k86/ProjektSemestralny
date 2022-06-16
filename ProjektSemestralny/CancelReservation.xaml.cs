@@ -61,17 +61,17 @@ namespace ProjektSemestralny
                 }
                 catch (Exception)
                 {
-                    Info infoBox = new Info("Nie znaleziono rezerwacji!");
+                    Info infoBox = new Info("Nie znaleziono rezerwacji !");
                     infoBox.ShowDialog();
                     this.Close();
                     return;
                 }
-                Info infoBox2 = new Info("Anulowano!");
+                Info infoBox2 = new Info("Anulowano !");
                 infoBox2.ShowDialog();
                 this.Close();
             }
             else
-                ErrorLabel.Content = "Wypełnij wszystkie pola!";
+                ErrorLabel.Content = "Wypełnij wszystkie pola !";
         }
     }
 }
