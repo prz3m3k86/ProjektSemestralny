@@ -41,8 +41,30 @@ namespace ProjektSemestralny
                 var seanse = context.seanse.Where(s => s.id_filmu == item.id_filmu).ToList();
                 foreach (var s in seanse)
                 {
-                    SeanseList.Items.Add(s.id_seansu + " " + s.id_sali + " " + s.czas_rozpoczecia);
+                    SeanseList.Items.Add(s.ToString());
                 }
+            }
+        }
+        private void SeanseList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            using (KinoEntities context = new KinoEntities())
+            {
+
+                if (SeanseList.SelectedItem != null)
+                {
+                    MiejscaList.Items.Clear();
+                    string curItem = SeanseList.SelectedItem.ToString();
+
+                    int id = Int32.Parse(curItem[24].ToString());
+                    var miejsca = context.miejsca.Where(m => m.id_sali == id).ToList();
+
+                    foreach (var m in miejsca)
+                    {
+                        MiejscaList.Items.Add(m.id_miejsca);
+                    }
+                }
+                else
+                    MiejscaList.Items.Clear();
             }
         }
     }

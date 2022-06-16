@@ -11,10 +11,20 @@
             <ImageBrush ImageSource="background.png"/>
         </Grid.Background>
         <ComboBox Name="FilmsCombo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,40,0,0" SelectionChanged="FilmsCombo_SelectionChanged"/>
-        <ListBox Name="SeanseList" HorizontalAlignment="Left" Height="279" VerticalAlignment="Top" Width="175" Margin="135,40,0,0">
+        <ListBox Name="SeanseList" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="180" Margin="135,40,0,0" SelectionChanged="SeanseList_SelectionChanged">
+            <ListBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.50"/>
+            </ListBox.Background>
+        </ListBox>
+
+
+
+        <ListBox Name="MiejscaList" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="180" Margin="315,40,0,0">
             <ListBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </ListBox.Background>
         </ListBox>
+
+
     </Grid>
 </Window>
