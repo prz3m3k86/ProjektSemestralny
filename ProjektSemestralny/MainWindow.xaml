@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektSemestralny"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="KinoArs" Height="450" Width="800" Icon="/film.png">
+    <Window.Background>
+        <ImageBrush ImageSource="/tlo.jpg" TileMode="None" Stretch="Fill"/>
+    </Window.Background>
 </Window>
