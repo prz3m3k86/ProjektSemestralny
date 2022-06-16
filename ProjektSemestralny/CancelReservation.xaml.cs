@@ -71,7 +71,7 @@ namespace ProjektSemestralny
                     this.Close();
                     return;
                 }
-                Info infoBox2 = new Info("Twoja rezerwacja zostałą anulowana !");
+                Info infoBox2 = new Info("Twoja rezerwacja została anulowana !");
                 infoBox2.ShowDialog();
                 this.Close();
             }

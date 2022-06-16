@@ -46,6 +46,7 @@ namespace ProjektSemestralny
         public Reservation()
         {
             InitializeComponent();
+            this.ResizeMode = ResizeMode.CanMinimize;
 
             MiejscaList.SelectionMode = SelectionMode.Multiple;
 
