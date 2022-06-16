@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:ProjektSemestralny"
         mc:Ignorable="d"
         Title="KinoArs" Height="450" Width="800" Icon="/film.png">
-    <Window.Background>
-        <ImageBrush ImageSource="/tlo.jpg" TileMode="None" Stretch="Fill"/>
-    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/tlo.jpg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" Height="72" Margin="314,124,214,223" TextWrapping="Wrap" VerticalAlignment="Center" Width="364" FontFamily="Global User Interface" FontSize="55" TextAlignment="Center">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Foreground="White" FontWeight="Bold" Text="KINO" FontStyle="Italic" TextDecorations="{x:Null}"/><Run Text=" "/><Run Foreground="White" Text="ARS" FontStyle="Italic" TextDecorations="Underline"/></TextBlock>
+        <Button Name="RezerwujButton" Content="Zarezerwuj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" Margin="367,204,0,0" Click="Button_Click" Height="46" FontSize="30" FontFamily="Segoe UI Semilight" Background="White" Foreground="Black" Grid.IsSharedSizeScope="True" BorderBrush="#FF655656">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Name="AnulujRezerwujButton" Content="Anuluj Rezerwację" HorizontalAlignment="Left" VerticalAlignment="Top" Width="242" Margin="329,255,0,0" Click="Button_Click2" Height="46" FontSize="30" FontFamily="Segoe UI Semilight" Background="White" Foreground="Black" HorizontalContentAlignment="Center" BorderBrush="#FF655656">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
 </Window>
