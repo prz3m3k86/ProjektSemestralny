@@ -20,6 +20,10 @@ namespace ProjektSemestralny
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Konstruktor głownego okno umozliwiającego wybór porządanej czynności. 
+        /// Ustawia okno na środku ekranu oraz blokuje możliwośc zmiany jego wielkości.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -27,6 +31,7 @@ namespace ProjektSemestralny
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
 
+        // Otwieranie nowego okna rezerwacji
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Reservation reservation = new Reservation();
@@ -34,6 +39,7 @@ namespace ProjektSemestralny
             reservation.ShowDialog();
         }
 
+        // Otwieranie nowego okna anulowania rezerwacji
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
             CancelReservation cancelReservation = new CancelReservation();

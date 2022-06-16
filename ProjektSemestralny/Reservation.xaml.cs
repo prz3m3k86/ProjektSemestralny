@@ -23,6 +23,7 @@ namespace ProjektSemestralny
     {
         private Dictionary<int, string> sits = new Dictionary<int, string>();
 
+        // Metoda pozwalająca wyświetlić listę filmów
         private void LoadFilms()
         {
             try
@@ -39,6 +40,9 @@ namespace ProjektSemestralny
             }
         }
 
+        /// <summary>
+        /// Konstruktor okna rezerwacji. Ustawia zawartość z dostępnymi filmami.
+        /// </summary>
         public Reservation()
         {
             InitializeComponent();
@@ -51,13 +55,15 @@ namespace ProjektSemestralny
             }
             catch
             {
-                Info infobox = new Info("Nie można wczytać danych!");
+                Info infobox = new Info("Nie można wczytać danych !");
                 infobox.ShowDialog();
                 return;
             }
 
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
+
+        // Po wybraniu filmu pokazuje listę dostępnych seansów 
         private void FilmsCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SeanseList.Items.Clear();
@@ -77,6 +83,8 @@ namespace ProjektSemestralny
                 LanguageLabel.Content = item.jezyk;
             }
         }
+         
+        // Po wybraniu seansu pokazuje wolne miejsca
         private void SeanseList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             using (KinoEntities context = new KinoEntities())
@@ -114,6 +122,8 @@ namespace ProjektSemestralny
                     MiejscaList.Items.Clear();
             }
         }
+
+        // Dodaje nowe rekordy do tabel "rezerwacje" i "zarezerwowane miejsca" 
         private void MakeReservation()
         
         {
@@ -156,6 +166,7 @@ namespace ProjektSemestralny
             }
         }
 
+        // Wywołuje metodę tworzenia rezerwacji
         private void DokonajRezerwacjiButton_Click(object sender, RoutedEventArgs e)
         {
             if (MiejscaList.SelectedItems.Count != 0 && ImieText.Text.Length != 0 && NazwiskoText.Text.Length != 0 && NrTelefonuText.Text.Length == 9 && Int32.TryParse(NrTelefonuText.Text, out int num))
