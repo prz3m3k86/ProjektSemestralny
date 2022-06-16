@@ -10,20 +10,42 @@
         <Grid.Background>
             <ImageBrush ImageSource="background.png"/>
         </Grid.Background>
+
         <ComboBox Name="FilmsCombo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,40,0,0" SelectionChanged="FilmsCombo_SelectionChanged"/>
-        <ListBox Name="SeanseList" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="180" Margin="135,40,0,0" SelectionChanged="SeanseList_SelectionChanged">
+        <ListBox Name="SeanseList" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="265" Margin="135,40,0,0" SelectionChanged="SeanseList_SelectionChanged">
             <ListBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.50"/>
             </ListBox.Background>
         </ListBox>
-
-
-
-        <ListBox Name="MiejscaList" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="180" Margin="315,40,0,0">
+        <ListBox Name="MiejscaList" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="180" Margin="409,40,0,0">
             <ListBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </ListBox.Background>
         </ListBox>
+        <Button Name="MiejscaButton" Content="Wybierz miejsca" HorizontalAlignment="Left" Height="47" Margin="416,316,0,0" VerticalAlignment="Top" Width="166" Click="MiejscaButton_Click"/>
+        <Label Name="ErrorLabel" Content="" HorizontalAlignment="Center" Height="28" Margin="0,376,0,0" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="238" FontFamily="Stencil" FontSize="15" Background="#00000000" Foreground="#99DC0000"/>
+        <TextBox Name="ImieText" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Margin="637,40,0,0"/>
+        <TextBox Name="NazwiskoText" HorizontalAlignment="Left" Height="23" Margin="637,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox Name="NrTelefonuText" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Margin="637,178,0,0"/>
+        <Button Name="DokonajRezerwacjiButton" Content="Dokonaj rezerwacji" HorizontalAlignment="Left" Height="45" Margin="636,288,0,0" VerticalAlignment="Top" Width="152" Click="DokonajRezerwacjiButton_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Name="NoSitsLabel" Content="" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Margin="484,566,0,0" VerticalAlignment="Top" Width="184" Background="#00000000" Foreground="#99FF0000" FontSize="15" FontFamily="Segoe UI Semilight"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="12,11,0,0" Height="29" Width="116" Foreground="Black" FontFamily="Segoe UI Semilight" TextAlignment="Center"><Run FontSize="18" Text="Wybierz film"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="192,11,0,0" Height="29" Width="150" Foreground="Black" FontFamily="Segoe UI Semilight" TextAlignment="Center" TextDecorations="{x:Null}"><Run FontSize="18" Text="Wybierz "/><Run FontSize="18" Text="seans"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="428,11,0,0" Height="29" Width="142" Foreground="Black" FontFamily="Segoe UI Semilight" TextAlignment="Center"><Run FontSize="18" Text="Wybierz "/><Run FontSize="18" Text="miejsca"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="637,159,0,0" TextWrapping="Wrap" Text="Nr telefonu" VerticalAlignment="Top" Width="85" Foreground="Black" FontFamily="Segoe UI Semilight" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="637,91,0,0" TextWrapping="Wrap" Text="Nazwisko" VerticalAlignment="Top" Width="85" Foreground="Black" FontFamily="Segoe UI Semilight" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="637,21,0,0" TextWrapping="Wrap" Text="Imię" VerticalAlignment="Top" Width="85" Foreground="Black" FontFamily="Segoe UI Semilight" FontSize="14"/>
+        <Label Name="DirectorLabel" Content="" HorizontalAlignment="Left" Height="34" Margin="12,83,0,0" VerticalAlignment="Top" Width="200" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="16"/>
+        <TextBlock Name="TextDirector" HorizontalAlignment="Left" Margin="11,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Semilight" FontSize="14" Foreground="#FFC5C5C5" Width="72" Visibility="Hidden"><Run Text="Reżyser"/><Run Text="ia:"/></TextBlock>
+        <Label Name="DurationLabel" Content="" HorizontalAlignment="Left" Height="34" Margin="10,122,0,0" VerticalAlignment="Top" Width="200" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="16"/>
+        <TextBlock Name="TextDuration" HorizontalAlignment="Left" Margin="11,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Semilight" FontSize="14" Foreground="#FFC5C5C5" Width="100" Visibility="Hidden"><Run Text="Czas trwania"/><Run Text=":"/></TextBlock>
+        <Label Name="LanguageLabel" Content="" HorizontalAlignment="Left" Height="34" Margin="12,161,0,0" VerticalAlignment="Top" Width="200" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="16"/>
+        <TextBlock Name="TextLanguage" HorizontalAlignment="Left" Margin="11,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Semilight" FontSize="14" Foreground="#FFC5C5C5" Width="72" Visibility="Hidden" Text="Język filmu:"/>
+
 
 
     </Grid>

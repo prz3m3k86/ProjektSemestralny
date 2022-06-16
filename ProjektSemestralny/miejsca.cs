@@ -28,5 +28,10 @@ namespace ProjektSemestralny
         public virtual sale sale { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<zarezerwowane_miejsca> zarezerwowane_miejsca { get; set; }
+
+        public override string ToString()
+        {
+            return $"Rz?d: {rzad}, Nr miejsca: {numer_miejsca}";
+        }
     }
 }
