@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Info" Height="150" Width="300" Icon="/film.png">
     <Grid Background="#FFADADAD">
-        <Label Name="InfoLabel" Content="" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="70" Margin="0,12,0,0" VerticalAlignment="Top" Width="233" Foreground="White" FontSize="14"/>
-        <Button Content="OK" HorizontalAlignment="Center" Height="32" Margin="0,87,0,0" VerticalAlignment="Top" Width="77" Click="Button_Click_1" Background="White" Foreground="Black" BorderBrush="#00707070" FontFamily="Segoe UI Semilight"/>
+        <Label Name="InfoLabel" Content="" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="55" Margin="0,12,0,0" VerticalAlignment="Top" Width="232" Foreground="White" FontSize="14"/>
+        <Button Content="OK" HorizontalAlignment="Center" Height="32" Margin="0,72,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_1" Background="White" Foreground="Black" BorderBrush="#00707070" FontFamily="Segoe UI Semilight"/>
 
     </Grid>
 </Window>

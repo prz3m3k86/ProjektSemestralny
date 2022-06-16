@@ -20,22 +20,25 @@ namespace ProjektSemestralny
     /// </summary>
     public partial class MainWindow : Window
     {
-        Reservation reservation = new Reservation();
-
         public MainWindow()
         {
             InitializeComponent();
+            this.ResizeMode = ResizeMode.CanMinimize;
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Reservation reservation = new Reservation();
 
             reservation.ShowDialog();
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
+            CancelReservation cancelReservation = new CancelReservation();
 
+            cancelReservation.ShowDialog();
         }
     }
 }

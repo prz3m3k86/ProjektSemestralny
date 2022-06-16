@@ -13,7 +13,7 @@
 
         <TextBox Name="IdBox" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="180" Margin="134,111,0,0" Background="#7F000000" BorderBrush="#00ABADB3" Foreground="White" SelectionBrush="#00000000" FontFamily="Segoe UI Semilight" FontSize="18"/>
         <TextBox Name="NrBox" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="180" Margin="467,111,0,0" Background="#7F000000" Foreground="White" SelectionBrush="#003399FF" BorderBrush="#05ABADB3" FontSize="18" FontFamily="Segoe UI Semilight"/>
-        <Button Name ="DeleteButton" Content="Anuluj rezerwację" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="180" Margin="306,360,0,0" Height="42" Click="DeleteButton_Click" Background="White" BorderBrush="#00707070" Foreground="Black" FontFamily="Segoe UI Semilight" FontSize="16">
+        <Button Name ="DeleteButton" Content="Anuluj rezerwację" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="180" Margin="0,348,0,0" Height="42" Click="DeleteButton_Click" Background="White" BorderBrush="#00707070" Foreground="Black" FontFamily="Segoe UI Semilight" FontSize="16">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
