@@ -30,7 +30,7 @@ namespace ProjektSemestralny
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            reservation.Show();
+            reservation.ShowDialog();
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)

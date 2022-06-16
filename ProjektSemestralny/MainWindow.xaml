@@ -8,7 +8,7 @@
         Title="KinoArs" Height="450" Width="800" Icon="/film.png">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/tlo.jpg"/>
+            <ImageBrush ImageSource="tlo.jpg"/>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Center" Height="72" Margin="314,124,214,223" TextWrapping="Wrap" VerticalAlignment="Center" Width="364" FontFamily="Global User Interface" FontSize="55" TextAlignment="Center">
             <TextBlock.Effect>

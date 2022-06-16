@@ -8,8 +8,13 @@
         Title="Reservation" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/background.png"/>
+            <ImageBrush ImageSource="background.png"/>
         </Grid.Background>
-
+        <ComboBox Name="FilmsCombo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,40,0,0" SelectionChanged="FilmsCombo_SelectionChanged"/>
+        <ListBox Name="SeanseList" HorizontalAlignment="Left" Height="279" VerticalAlignment="Top" Width="175" Margin="135,40,0,0">
+            <ListBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </ListBox.Background>
+        </ListBox>
     </Grid>
 </Window>
