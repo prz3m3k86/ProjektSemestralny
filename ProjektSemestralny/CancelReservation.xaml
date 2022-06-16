@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProjektSemestralny.CancelReservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektSemestralny"
+        mc:Ignorable="d"
+        Title="Kino ARS - Anulowanie rezerwacji" Height="450" Width="800" Icon="/film.png">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.png"/>
+        </Grid.Background>
+
+        <TextBox Name="IdBox" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="180" Margin="134,111,0,0" Background="#7F000000" BorderBrush="#00ABADB3" Foreground="White" SelectionBrush="#00000000" FontFamily="Segoe UI Semilight" FontSize="18"/>
+        <TextBox Name="NrBox" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="180" Margin="467,111,0,0" Background="#7F000000" Foreground="White" SelectionBrush="#003399FF" BorderBrush="#05ABADB3" FontSize="18" FontFamily="Segoe UI Semilight"/>
+        <Button Name ="DeleteButton" Content="Anuluj rezerwację" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="180" Margin="306,360,0,0" Height="42" Click="DeleteButton_Click" Background="White" BorderBrush="#00707070" Foreground="Black" FontFamily="Segoe UI Semilight" FontSize="16">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Height="77" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="548" FontFamily="Imprint MT Shadow" FontSize="48" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontStyle="Normal"><Run Text="Anulowanie rezerwacji"/></TextBlock>
+        <Rectangle Fill="#FFA5A5A5" HorizontalAlignment="Center" Height="4" Margin="0,67,0,0" Stroke="Black" VerticalAlignment="Top" Width="494"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="153,92,0,0" TextWrapping="Wrap" Text="Podaj numer rezerwacji:" VerticalAlignment="Top" Width="142" Foreground="Black" FontSize="13"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="495,91,0,0" TextWrapping="Wrap" Text="Podaj numer telefonu:" VerticalAlignment="Top" Width="152" Foreground="Black" FontSize="13"/>
+        <Label Name="ErrorLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,376,0,0" Width="243" Foreground="#99FF0000" FontFamily="Segoe UI Semilight" FontSize="14"/>
+
+    </Grid>
+</Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektSemestralny"
         mc:Ignorable="d"
-        Title="KinoArs" Height="450" Width="800" Icon="/film.png">
+        Title="Kino ARS" Height="450" Width="800" Icon="/film.png">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="tlo.jpg"/>

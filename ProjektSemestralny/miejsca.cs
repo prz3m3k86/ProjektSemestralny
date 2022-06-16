@@ -31,7 +31,7 @@ namespace ProjektSemestralny
 
         public override string ToString()
         {
-            return $"Rz?d: {rzad}, Nr miejsca: {numer_miejsca}";
+            return $"Rz¹d: {rzad}, Nr miejsca: {numer_miejsca}";
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektSemestralny"
         mc:Ignorable="d"
-        Title="Reservation" Height="450" Width="800">
+        Title="Kino ARS - Rezerwacje" Height="450" Width="800" Icon="/film.png">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="background.png"/>
@@ -22,7 +22,6 @@
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </ListBox.Background>
         </ListBox>
-        <Button Name="MiejscaButton" Content="Wybierz miejsca" HorizontalAlignment="Left" Height="47" Margin="416,316,0,0" VerticalAlignment="Top" Width="166" Click="MiejscaButton_Click"/>
         <Label Name="ErrorLabel" Content="" HorizontalAlignment="Center" Height="28" Margin="0,376,0,0" VerticalAlignment="Top" VerticalContentAlignment="Top" Width="238" FontFamily="Stencil" FontSize="15" Background="#00000000" Foreground="#99DC0000"/>
         <TextBox Name="ImieText" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Margin="637,40,0,0"/>
         <TextBox Name="NazwiskoText" HorizontalAlignment="Left" Height="23" Margin="637,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
