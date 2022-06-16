@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektSemestralny", "ProjektSemestralny\ProjektSemestralny.csproj", "{5808079E-55C4-4810-8E11-73CA6049E57F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "KinoARS", "KinoARS\KinoARS.vdproj", "{74BAC6C2-4B0E-4C8D-AC63-CC7BE5671FB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{5808079E-55C4-4810-8E11-73CA6049E57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5808079E-55C4-4810-8E11-73CA6049E57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5808079E-55C4-4810-8E11-73CA6049E57F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BAC6C2-4B0E-4C8D-AC63-CC7BE5671FB5}.Debug|Any CPU.ActiveCfg = Debug
+		{74BAC6C2-4B0E-4C8D-AC63-CC7BE5671FB5}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
